@@ -7,11 +7,11 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize)]
 pub struct SMSRConfiguration{
-    from: String,
-    smtp_server: String,
-    port: String,
-    user: String,
-    passwd: String,
+    pub from: String,
+    pub smtp_server: String,
+    pub port: String,
+    pub user: String,
+    pub passwd: String,
 }
 
 

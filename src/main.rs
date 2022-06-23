@@ -9,6 +9,6 @@ use crate::parameters::*;
 use crate::email::*;
 
 fn main() -> result::Result<(),String> {
-    let config_file = "/home/biber/robin/projekte/smsr/smsr.conf";
+    let config_file = "/etc/smsr.conf";
     send_email(parse_configfile(config_file.to_string())?, parse_cmd_parameters())    
 }

@@ -9,9 +9,10 @@ use serde::{Deserialize, Serialize};
 pub struct SMSRConfiguration{
     pub from: String,
     pub smtp_server: String,
-    pub port: String,
+    pub port: u16,
     pub user: String,
     pub passwd: String,
+    pub starttls: bool,
 }
 
 
